@@ -1,0 +1,313 @@
+/* global stuff */
+* {
+  margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f2f6;
+/*
+ background-color: #ced6e0;
+*/
+}
+#page-wrapper {
+position: relative;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+-webkit-transition: 0.3s;
+  transition: 0.3s; 
+}
+
+
+/* header*/
+
+#header {
+display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #4b6584;
+  position: fixed;
+  align-items: center;
+}
+
+#nav-bar a {
+  font-size: 1.4rem;
+  font-family: 'Sarabun', sans-serif;*/
+  
+}
+
+
+
+nav > ul {
+ display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+width: 40vw;
+
+  
+  
+}
+
+/*.logo > img {
+width: 30vw;
+}*/
+
+
+h2{
+  font-size: 3rem;
+  color: #111111;
+  font-family: 'Amaranth', sans-serif;
+    width: 100%;
+  text-align: center;
+ margin-top: 5rem;
+}
+
+#form #email {
+  font-size: 1.4em;
+  background-color: #ffeaa7;
+  
+}
+#form #submit {
+  position: relative;
+ top: 2rem;
+  right: 11rem;
+  font-size: 1.4rem;
+ background-color: #ffeaa7;
+  cursor: pointer;
+   font-family: 'Sarabun', sans-serif;
+  font-weight: bold;
+ 
+
+  
+}
+#form #submit:hover {
+
+}
+h3 {
+  font-family: 'Amaranth', sans-serif;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+i {
+  font-size: 2rem;
+  position: relative;
+  top: 6rem;
+  right: 2rem;
+    color: #20bf6b;
+}
+#benefits p {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.containerh3 {
+  padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+/*middle page*/
+
+#midpage {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width: 800px) {
+  .mid-page {
+    position: relative;
+    top: 30px;
+  }
+}
+
+@media(max-width: 850px) {
+  .h2 {
+    width: 100vw;
+  }
+}
+
+#form {
+  position: relative;
+  padding: 20px;
+text-align: center;
+}
+
+
+
+#video {
+  text-align: center;
+ width: 40rem;
+  margin-top: 80px;
+  
+}
+
+
+/* card*/
+.prices {
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  padding: 9rem;
+  margin: 10px;
+}
+@media(max-width: 800px) {
+  .prices {
+  align-items: center;
+   flex-wrap: wrap;
+    flex-direction: column;
+   
+    
+}
+}
+
+.butn {
+  text-align: center;
+  border: none;
+  padding: 12px 28px;
+ background-color: #ffeaa7;
+  width: 100%;
+  display: block;
+  Font-size: 1.7rem;
+  cursor: pointer;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: bold;
+
+}
+.buy {
+display: block;
+  position: relative;
+  
+  text-align: center;
+}
+
+.butn:hover {
+  
+ background-color: #7bed9f;
+  color: white;
+  
+}
+.card-head {
+  color: white;
+  background-color: #4b6584;
+  text-align: center;
+  padding: 5px;
+  font-size: 25px;
+ 
+  
+}
+.listdrop li {
+    border-bottom: 1px solid #eee;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: bold;
+}
+
+.listdrop {
+  margin: 0;
+  padding: 0;
+    -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid;
+  list-style-type: none;
+  width: 15vw;
+  
+}
+@media(max-width: 850px) {
+  .listdrop {
+   width: 50vw;
+   
+  }
+}
+.pay {
+  background-color: #32ff7e;
+  font-size: 30px;
+}
+.listdrop:hover{
+box-shadow: 0 8px 10px 2px rgba(0,0,0,0.5);
+}
+
+/*footer*/
+.footer {
+  position: relative;
+  background-color: #4b6584;
+ display: flex;
+  justify-content: space-around;
+font-size: 1.4rem;
+  font-family: 'Sarabun', sans-serif;
+  
+ 
+}
+.footer p {
+  color: white;
+ width: 40%;
+  
+  
+  
+}
+.footer a {
+  display: flex;
+  order: 2;
+
+
+}
+/*
+@media screen and (max-width: 555px) {
+  #header {
+flex-direction: column;
+ justify-content: center;
+    background-color: white;
+    
+  }
+  nav > ul {
+flex-direction: column;
+    position: relative;
+    top: 5rem;
+    right: 2rem;
+   background-color: #4b6584;
+   height: 100%;
+    
+  }
+  #midpage {
+  padding: 10rem;
+  }
+  nav  ul  a {
+   
+   
+  }
+  .logo > img {
+   width: 0%;
+    height: 0%;
+  }
+}
+@media screen and (max-width: 555px) {
+  #benefits {
+text-align: center;
+  }
+  #benefits i {
+    position: relative;
+    right: 15rem;
+    
+  }
+}
+*/
